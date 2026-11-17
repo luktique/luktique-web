@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luktique · Muy pronto</title>
+<meta name="description" content="Luktique, tu vestuarista personal. Tu armario digital con atuendos pensados para ti. Muy pronto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,500&family=Figtree:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fondo:#1F1424;
+  --texto:#FBF6F3;
+  --suave:#CDBFD6;
+  --rosa:#FF4F8E;
+  --display:"Bodoni Moda","Didot",Georgia,serif;
+  --cuerpo:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:radial-gradient(circle at 70% 20%,#3B2347 0%,var(--fondo) 55%);
+  color:var(--texto);
+  font-family:var(--cuerpo);
+  display:grid;
+  place-items:center;
+  padding:24px;
+  text-align:center;
+}
+main{max-width:620px;display:flex;flex-direction:column;align-items:center;gap:22px}
+.sello{
+  width:72px;height:72px;border-radius:50%;
+  background:var(--rosa);
+  display:grid;place-items:center;
+}
+.sello svg{width:34px;height:34px}
+h1{
+  margin:0;
+  font-family:var(--display);
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(56px,14vw,104px);
+  line-height:1;
+  letter-spacing:-0.01em;
+}
+p{margin:0}
+.lema{font-size:clamp(18px,3.4vw,22px);color:var(--suave);line-height:1.45;max-width:46ch}
+.pronto{
+  margin-top:6px;
+  height:44px;padding:0 22px;
+  border-radius:22px;
+  border:1.5px solid var(--rosa);
+  color:var(--rosa);
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  display:inline-flex;align-items:center;
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="sello" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg>
+  </div>
+  <h1>Luktique</h1>
+  <p class="lema">Tu vestuarista personal. Tu armario digital, con atuendos pensados para ti.</p>
+  <p class="pronto">Muy pronto</p>
+</main>
+</body>
+</html>
